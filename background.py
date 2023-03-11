@@ -1,4 +1,4 @@
-from vari import none,pre,post, t,numb, n, des, nor, wat, fir, gra, ele, fig, bug, psy, roc, gro, poi, dar, fly, ste, ice, dra, gho ,norC, watC, firC, graC, eleC, figC, bugC, psyC, rocC, groC, poiC, darC, flyC, steC, iceC, draC, ghoC,useablenums,randomnums,truerandom
+from vari import none,pre,post, t,numb, n, des, nor, wat, fir, gra, ele, fig, bug, psy, roc, gro, poi, dar, fly, ste, ice, dra, gho ,norC, watC, firC, graC, eleC, figC, bugC, psyC, rocC, groC, poiC, darC, flyC, steC, iceC, draC, ghoC,useablenums,randomnums
 from colorama import Fore, Back, Style
 import random,pygame
 from pictures import Victini,SnivyFix, Servine,Serperior,Tepig,Pignite,Emboar,Oshawott,Dewott,Samurott,PatratFix,Patrat2Fix,Watchog,Lillipup,Herdier,Stoutland,Purrloin,Liepard,Pansage,Simisage,Pansear, Simisear,PanpourFix,Simipour,Munna,Musharna,Pidove,Tranquill,Unfezant,Unfezant2,Blitzle,Zebstrika,Roggenrola, Boldore, Gigalith, Woobat, Swoobat, Drilbur, Excadrill,Audino,Timburr,Gurdurr,Conkeldurr,Tympole,Palpitoad,Seismitoad,Throh,Sawk,Sewaddle,Swadloon,Leavanny,Venipede,Whirlipede, Scolipede,Cottonee,Whimsicott,Petilil, Lilligant,Basculin,Sandile,Krokorok, Krookodile,Darumaka, Darmanitan,Darmanitan2, Maractus,Dwebble,Dwebble2,Crustle,Scraggy,Scrafty,SigilyphFix,Yamask,Cofagrigus,Cofagrigus2, Tirtouga, Carracosta,Archen,Archeops, Trubbish, Garbodor, Zorua,Zorua2,Zorua3, Zoroark,Minccino, Cinccino,Gothita,Gothorita,Gothitelle,Solosis,Duosion,Reuniclus,Ducklett, Swanna, Vanillite, Vanillish,Vanilluxe,Deerling,Deerling2,Sawsbuck,Sawsbuck2Fix,Emolga, Karrablast, Escavalier,Foongus,Amoonguss,Amoonguss2,Frillish,Jellicent,Alomomola, Joltik, Galvantula,Ferroseed, Ferrothorn, Klink, Klang,Klinklang, Tynamo, Eelektrik, Eelektross, Elgyem,Beheeyem,Litwick, Lampent, Chandelure, Axew, Fraxure, Haxorus,Haxorus2Fix, Cubchoo,Beartic,Cryogonal,Shelmet, Accelgor, Stunfisk, Mienfoo, Mienshao, Druddigon, Golett, Golurk, Pawniard, Bisharp,Bouffalant, Rufflet, Braviary, Vullaby, Mandibuzz, Heatmor, Durant, Deino, Zweilous, Hydreigon,Hydreigon2, Larvesta, Volcarona, Cobalion , Terrakion, Virizion,Tornadus,Tornadus2,Thundurus,Reshiram, Zekrom,Zekrom2,Landorus,KyuremFix,Kyurem2,Kyurem3, Keldeo,Keldeo2, Meloetta, Genesect
@@ -123,7 +123,7 @@ def Start():
   elif choice.lower() == "random":
     choice = random.choice(randomnums)
   else:
-    choice = truerandom
+    choice = random.choice(useablenums)
     print("Please FOLLOW DIRECTIONS")
   window = pygame.display.set_mode((900,450))
   
